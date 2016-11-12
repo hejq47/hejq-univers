@@ -1,0 +1,171 @@
+﻿<HTML><HEAD><TITLE>hannes - stjerner</TITLE>
+
+<META content="Microsoft FrontPage 12.0" name=GENERATOR>
+<bgsound src="Stars.mp3" loop="-1">
+</HEAD>
+<BODY text=#9900cc vLink=#9900cc aLink=#f000a0 link=#9900cc bgColor=#000000>
+<SCRIPT language=JavaScript1.2>
+
+/*
+Snow Effect Script
+Submitted by Altan d.o.o. (snow@altan.hr, http://www.altan.hr/snow/index.html)
+Permission granted to Dynamicdrive.com to feature script in archive
+For full source code to this script, visit http://dynamicdrive.com
+*/
+  
+
+  //Configure below to change URL path to the snow image
+  var snowsrc="images/star2.gif"
+  // Configure below to change number of snow to render
+  var no = 10;
+
+  var ns4up = (document.layers) ? 1 : 0;  // browser sniffer
+  var ie4up = (document.all) ? 1 : 0;
+  var ns6up = (document.getElementById&&!document.all) ? 1 : 0;
+
+  var dx, xp, yp;    // coordinate and position variables
+  var am, stx, sty;  // amplitude and step variables
+  var i, doc_width = 800, doc_height = 600;
+  
+  if (ns4up||ns6up) {
+    doc_width = self.innerWidth;
+    doc_height = self.innerHeight;
+  } else if (ie4up) {
+    doc_width = document.body.clientWidth;
+    doc_height = document.body.clientHeight;
+  }
+
+  dx = new Array();
+  xp = new Array();
+  yp = new Array();
+  am = new Array();
+  stx = new Array();
+  sty = new Array();
+  
+  for (i = 0; i < no; ++ i) {  
+    dx[i] = 0;                        // set coordinate variables
+    xp[i] = Math.random()*(doc_width-50);  // set position variables
+    yp[i] = Math.random()*doc_height;
+    am[i] = Math.random()*20;         // set amplitude variables
+    stx[i] = 0.02 + Math.random()/10; // set step variables
+    sty[i] = 0.7 + Math.random();     // set step variables
+    if (ns4up) {                      // set layers
+      if (i == 0) {
+        document.write("<layer name=\"dot"+ i +"\" left=\"15\" top=\"15\" visibility=\"show\"><a href=\"http://dynamicdrive.com/\"><img src='"+snowsrc+"' border=\"0\"></a></layer>");
+      } else {
+        document.write("<layer name=\"dot"+ i +"\" left=\"15\" top=\"15\" visibility=\"show\"><img src='"+snowsrc+"' border=\"0\"></layer>");
+      }
+    } else if (ie4up||ns6up) {
+      if (i == 0) {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><a href=\"http://dynamicdrive.com\"><img src='"+snowsrc+"' border=\"0\"></a></div>");
+      } else {
+        document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='"+snowsrc+"' border=\"0\"></div>");
+      }
+    }
+  }
+  
+  function snowNS() {  // Netscape main animation function
+    for (i = 0; i < no; ++ i) {  // iterate for every dot
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+        doc_width = self.innerWidth;
+        doc_height = self.innerHeight;
+      }
+      dx[i] += stx[i];
+      document.layers["dot"+i].top = yp[i];
+      document.layers["dot"+i].left = xp[i] + am[i]*Math.sin(dx[i]);
+    }
+    setTimeout("snowNS()", 10);
+  }
+
+  function snowIE_NS6() {  // IE and NS6 main animation function
+    for (i = 0; i < no; ++ i) {  // iterate for every dot
+      yp[i] += sty[i];
+      if (yp[i] > doc_height-50) {
+        xp[i] = Math.random()*(doc_width-am[i]-30);
+        yp[i] = 0;
+        stx[i] = 0.02 + Math.random()/10;
+        sty[i] = 0.7 + Math.random();
+        doc_width = ns6up?window.innerWidth : document.body.clientWidth;
+        doc_height = ns6up?window.innerHeight : document.body.clientHeight;
+      }
+      dx[i] += stx[i];
+      if (ie4up){
+      document.all["dot"+i].style.pixelTop = yp[i];
+      document.all["dot"+i].style.pixelLeft = xp[i] + am[i]*Math.sin(dx[i]);
+           document.getElementById("dot"+i).style.top=yp[i];
+      document.getElementById("dot"+i).style.left=xp[i] + am[i]*Math.sin(dx[i]);
+      }   
+    }
+    setTimeout("snowIE_NS6()", 10);
+  }
+
+  if (ns4up) {
+    snowNS();
+  } else if (ie4up||ns6up) {
+    snowIE_NS6();
+  }
+
+</SCRIPT>
+<CENTER>
+<H1>&nbsp; <a href="hjertetid.htm"> <img border="0" src="images/star2.gif" width="27" height="27"></a>  The Black
+Point&nbsp;of <a href="mainframe.html">HejQ</a>&nbsp; <a href="du-har-mange.htm"> <img border="0" src="images/star2.gif" width="27" height="27"></a>
+</H1>
+<H1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Slukformorket.htm"><img border="0" src="images/pulsar.gif" width="71" height="71"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;<a href="rejsen-mod-lyset.htm"><img border="0" src="images/starlilla.gif" width="104" height="104"></a>
+</H1>
+</CENTER>
+<p align="right">&nbsp;
+<font face="Blackadder ITC">
+<a href="kaerlighedord..htm">
+<img border="0" src="images/Billede3.gif" width="23" height="18"></a></font></p>
+<CENTER>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="formorsdag.htm"><img border="0" src="images/fairynice.gif"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="linkshimmel.html"><img border="0" src="images/bagstjerne.gif" width="200" height="200"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;</CENTER>&nbsp;&nbsp; 
+<img src="images/Hanne-hejq.jpg" width="1394" height="1926" style="height: 103px; width: 75px">&nbsp;&nbsp;&nbsp;<a href="hvis_du_forlader_mig.htm">&nbsp;<font color="#F000A0" face="Blackadder ITC">&nbsp;</font>You'r
+allways near&nbsp;<font size="4"><font face="Blackadder ITC"> </font></a> </font>
+<font face="Blackadder ITC">
+<P>&nbsp;&nbsp;&nbsp;&nbsp;
+
+<p align="center"><CENTER><applet CODE="watermessager.class" WIDTH="480" HEIGHT="50" align="center">
+  <param NAME="demicron" VALUE="www.demicron.se">
+  <param NAME="reg" VALUE="A00046">
+  <param NAME="foreground" VALUE="0080ff">
+  <param NAME="selectcolor" VALUE="0000ff">
+  <param NAME="font" VALUE="TimesRoman">
+  <param NAME="fontsize" VALUE="20">
+  <param NAME="bold" VALUE="yes">
+  <param NAME="italic" VALUE="no">
+  <param NAME="delay" VALUE="50">
+  <param NAME="textdelay" VALUE="2000">
+  <param NAME="textspeed" VALUE="1">
+  <param NAME="waterspeed" VALUE="20">
+  <param NAME="amplitude" VALUE="5">
+  <param name="background" value="black">
+  <param NAME="target" VALUE="_top">
+  <param NAME="item0" VALUE="Velkommen til Black Point i ">
+  <param NAME="item1" VALUE="Oraklet DeVAR i HejQ's univers">
+  <param NAME="item2" VALUE="Her er- Digte - Sjov - Vise ord">
+  <param NAME="item3" VALUE="Du kan kontakte mig ved at sende en E-mail">
+  <param NAME="item4" VALUE="Du kan sende min side til dine venner ">
+  <param NAME="item5" VALUE="http://hejq.onemangang.dk/index.htm">
+  <param NAME="item6" VALUE="Kom snart igen ">
+  <param NAME="item7" VALUE="Min E-mail adresse er hejq@hotmail.dk">
+  <param NAME="url0" VALUE=" ">
+  <param NAME="url1" VALUE=" ">
+  <param NAME="url2" VALUE=" ">
+  <param NAME="url3" VALUE>" ">
+  <param NAME="url4" VALUE=" ">
+  <param NAME="url5" VALUE=" ">
+  <param NAME="url6" VALUE=" ">
+  <param NAME="url7" VALUE="http://www.demicron.se">
+</applet>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="livetord.htm"><img border="0" src="images/feelloved.gif" width="212" height="41" align="right"></a>
+
+</CENTER></p>
+
+</BODY></HTML>
