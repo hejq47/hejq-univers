@@ -1,0 +1,508 @@
+﻿<HTML>
+<HEAD>
+<!--
+
+Script Name:  Logo Orbit
+
+Website URL:  http://javascript.internet.com/messages/logo-orbit.html
+
+Description:  (IE Only)  This orbiting 3-D message follows your mouse around the screen.  The message, color and font are simple to modify!
+
+-->
+
+
+<!-- ONE STEP TO INSTALL LOGO ORBIT:
+
+  1.  Copy the coding into the HEAD of your HTML document  -->
+
+<!-- STEP ONE: Paste this code into the HEAD of your HTML document  -->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+if (document.all) {
+//Things you can alter
+yourLogo = "DAG EFRER DAG EFTER ";  //Not less than 2 letters!
+logoFont = "Ariel Black ITC";
+logoColor = "FFF0FF";
+//Nothing needs altering below!
+yourLogo = yourLogo.split('');
+L = yourLogo.length; 
+TrigSplit = 360 / L;
+Sz = new Array()
+logoWidth = 80;
+logoHeight = -40;
+ypos = 0;
+xpos = 0;
+step = 0.05;
+currStep = 0;
+document.write('<div id="outer" style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i = 0; i < L; i++) {
+document.write('<div id="ie" style="position:absolute;top:0px;left:0px;'
++'width:10px;height:10px;font-family:'+logoFont+';font-size:12px;'
++'color:'+logoColor+';text-align:center">'+yourLogo[i]+'</div>');
+}
+document.write('</div></div>');
+function Mouse() {
+ypos = event.y;
+xpos = event.x - 5;
+}
+document.onmousemove=Mouse;
+function animateLogo() {
+outer.style.pixelTop = document.body.scrollTop; 
+for (i = 0; i < L; i++) {
+ie[i].style.top = ypos + logoHeight * Math.sin(currStep + i * TrigSplit * Math.PI / 180);
+ie[i].style.left = xpos + logoWidth * Math.cos(currStep + i * TrigSplit * Math.PI / 180);
+Sz[i] = ie[i].style.pixelTop - ypos;
+if (Sz[i] < 5) Sz[i] = 5;
+ie[i].style.fontSize = Sz[i] / 1.7;
+}
+currStep -= step;
+setTimeout('animateLogo()', 20);
+}
+window.onload = animateLogo;
+}
+//  End -->
+</script>
+
+
+<title></title>
+
+
+<bgsound src="newage.mid" loop="-1">
+
+
+</HEAD>
+
+
+<body bgcolor="#35152D">
+
+
+<div>
+  <div align="center">
+    <table border="10" cellpadding="10" cellspacing="5" width="461" bordercolorlight="#D4D4D4" bordercolordark="#B0B0B0" background="images/nylillasatin.jpg">
+      <tr>
+        <td width="446" bordercolor="#FFFFFF" colspan="2" rowspan="4" align="center">
+          <p align="center"><b><font color="#D4D4D4"><font size="5">Den nye tids
+          børn</font></font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">De spirituelle børn<br>
+          af<br>
+          Anette Bitten Christensen, august 2002<br>
+          Healer, DNA Practitioner og Formidler af Spirituel visdom<br>
+          <br>
+          Hvem er de spirituelle børn?<br>
+          Den nye generation af børn er meget anderledes end tidligere
+          genera-tioner. Vi får en særlig hjælp her på Moder Jord for øjeblikket
+          på mange forskellige måder.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">En af de særligt
+          vigtige måder er via vores spirituelle børn. Nutidens børn er meget
+          specielle børn. Det er børn med en stor intuition/spirituel indsigt
+          og visdom.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Som os voksne når
+          vi begynder at komme i bevidst kontakt med vores indre stemme
+          (hjertets stemme) og vores Højere Selv. Vi oplever da, at vi nogle
+          gange &quot;ved&quot; at sådan er det, selv om omverdenen evt. fortæller
+          os noget andet, og selv om vi ikke kan forklare det med ord. Vi
+          &quot;ved&quot; det bare/en indre viden. Og det er denne viden som
+          disse børn kommer herned med.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Nutidens børn er
+          anderledes børn:<br>
+          · De er mere udfordrende<br>
+          · Mere intelligente<br>
+          · Mere konfronterende<br>
+          · Mere intuitive<br>
+          · Og i nogle tilfælde mere voldelige<br>
+          end nogen børn der tidligere er set, og dette kræver en ny og
+          anderledes måde at være forældre på og en ny form for skole. Vi er
+          nødt til at gå væk fra de gamle måder at gøre tingene på!</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Det er værdige,
+          stolte og stærke børn.<br>
+          Det er sensitive og sårbare/sarte børn.<br>
+          Det er ærlige børn, som &quot;hader&quot; løgne og forstillelse.<br>
+          Det er børn som gennemskuer os, hvis vi har skjulte motiver/tanker/<br>
+          følelser og ikke giver ærligt udtryk for hvem vi er.<br>
+          Det er børn som rummer meget stærke følelser, som de kan have svært<br>
+          ved at håndtere. Dvs. de har brug for forældre, som kan hjælpe dem
+          ved at kunne rumme deres følelser. Som viser dem kærlighed også når
+          de &quot;flipper ud&quot; på grund af deres stærke følelser.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">For at vi forældre
+          kan rumme vores børns følelser, er vi nødt til at kunne rumme vores
+          egne følelser - fx vores vrede, vores sårbarhed, vores frygt og
+          mangel på selvkærlighed og selvaccept. Vi er nødt til at sætte
+          fokus på os selv, og det som ikke fungerer i vores liv. Vi er nødt
+          til at rense ud i vores tanker og vores følelser. (Og jeg ved godt,
+          hvor svært det kan være at få tid til sig selv, når vi både har børn
+          og arbejde).</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Dvs. at den bedste
+          måde vi kan hjælpe vores børn på er ved at arbejde med vores egen
+          udvikling og vores egne følelser, og vi er faktisk nødt til at gøre
+          det, hvis vi vil følges med vores børn og deres udvikling. Netop
+          dette er en af de vigtige grunde til, at disse specielle børn kommer
+          til os i denne tid. For de vil være i stand til at skubbe/puffe til
+          os, så vi får set på os selv, udvidet vores bevidsthed og kommer
+          videre i vores egen udvikling som menneske.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Vores børn kan lære
+          os så meget om os selv, netop fordi de ser gen-nem os og fordi de som
+          små spejler reflekterer tilbage til os, hvad det er vi sender ud til
+          dem på den ene eller anden måde.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Så lyt til jeres
+          børn, fordi de fortæller os megen visdom og mange<br>
+          sandheder om os selv!</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Lær af jeres børn
+          - de er faktisk &quot;små&quot; spirituelle lærere!</font></b></p>
+    <center>
+          <p align="center"><b><font size="3" color="#D4D4D4">Giv dem ansvar -
+          især det de selv beder om at få!</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Giv dem rammer - så
+          de ikke fuldstændig kører afsted med jer. Så de også mærker, at I
+          er de ansvarlige voksne, som tager hånd om dem!</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Giv dem plads til
+          at kunne være de børn, de er!</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Ær dem og
+          respekter dem, for de er nutidens juveler!</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Mød dem der hvor
+          de er lige nu og LYT til dem - både via deres følelser og ord!</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Det vigtigste af
+          alt: ELSK DEM - giv dem ubetinget kærlighed lige som de også giver
+          jer forældre ubetinget kærlighed.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">ELSK dem i enhver
+          situation og giv udtryk for det - vis dem hvor meget I elsker dem. De
+          har meget brug for kys, knus og kram - også &quot;store&quot; børn.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Min personlige
+          tilgang til spirituelle børn<br>
+          Jeg har en datter på 9 år (og en voksen søn), som rummer meget af
+          det, som jeg har nævnt. Hun har haft det meget svært følelsesmæssigt
+          med sig selv, især da hun var mindre. Hun har været en af mine
+          vigtigste læremestre i dette liv, for jeg har været nødt til at
+          flytte mig hele tiden i min udvikling for at kunne møde hende og
+          forstå hende.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Til tider har det
+          været meget svært, og jeg har ikke anet, hvad jeg skulle stille op.
+          Da jeg begyndte at øve mig på at kunne rumme hendes stærke følelser
+          som nogle gange mundede ud i destruktiv adfærd, hvor hun slog på mig
+          og sparkede mig, og hvor jeg selvfølgelig blev nødt til at sætte grænser
+          og stoppe hende, men samtidig være der for hende og vise hende, at
+          jeg stadig elskede hende, også når hun opførte sig temmelig
+          uhensigtsmæssigt, begyndte hun at få det bedre - og. hun blev i
+          stand til at øve sig på at rumme sine stærke følelser og håndtere
+          dem bedre.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">For når hun havde
+          opført sig temmelig voldsomt over for mig, fik hun skyldfølelse og
+          blev meget negativ over for sig selv. Og det er meget hårdt for os
+          som forældre at opleve, at vores børn begynder at optræde hadefuldt
+          over for sig selv. Jeg har talt meget med hende siden hun var ganske
+          lille. Hun har en meget stærk vilje som mange af disse<br>
+          spirituelle børn, og det er noget af en præstation nogle gange at
+          finde balancen mellem at være tolerant og samtidig sætte grænser/rammer.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">For disse børn
+          har også meget brug for, at vi er synlige voksne, som tager ansvar
+          for vores børn og fremtræder som dem, der trods alt har den største
+          viden om hvordan det er at leve på denne fysiske jord. Vi skal ikke
+          lade vores børn &quot;køre&quot; fuldstændig rundt med os, for det
+          bliver de utrygge af.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Min datter har også
+          fra hun var helt lille vidst at der fandtes engle, hun har også i
+          flere perioder haft usynlige venner. Hun er ikke i tvivl om, at vi har
+          haft flere forskellige liv, og da hun var 3-4 år begyndte hun at tale
+          meget om sin farfar, som hun har aldrig har kendt i dette liv, da han
+          var død flere år før hun blev født. Hun viste en stor følelsesmæssig<br>
+          tilknytning til ham, som ikke kunne forklares ud fra dette liv. Så
+          det gik op for mig, at de formentlig har kendt hinanden, inden hun kom
+          herned. Hun vidste at hendes farfar passede på hende, ligesom hun er
+          klar over, at flere engle passer på hende.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Dette talte vi en
+          hel del om, da hun i lange perioder sov meget dårligt om natten med
+          gentagne mareridt. Hun er meget sensitiv og opfanger andres ubalancer,
+          og derfor har det nogle gange været hårdt for hende at være sammen
+          med andre voksne og børn. Hun er meget glad for dyr og naturen -
+          snakker med både fugle og blomster - og viser stor<br>
+          omsorg, indlevelse og medfølelse.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Hun har i perioder
+          følt sig meget ensom især da hun startede i skolen, fordi hun ikke følte
+          sig mødt som den hun var/er hverken af voksne eller sine
+          klassekammerater, selv om det er en klasse med et godt socialt miljø.
+          Men der er tilsyneladende ikke andre i hendes klasse, som helt
+          &quot;ligner&quot; hende.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Hendes ensomhed er
+          først ophørt for nylig, da hun mødte en<br>
+          &quot;hjerteveninde&quot;, hvilket har været hendes største ønske i
+          flere år. De 2 piger har meget til fælles, og der er en skøn
+          hjerteenergi og livsglæde imellem dem.<br>
+          Jeg er dybt taknemmelig for dette, især fordi jeg bad englene om at
+          hjælp, og 2 dage efter startede deres specielle venskab. Englene er
+          fantastiske til at høre vores dybtfølte bønner!</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Jeg er så tit
+          blevet dybt forbavset, når min datter er kommet med udtalelser om
+          mine og hendes fars ord og handlinger og om min mands og mit forhold,
+          især når det er i ubalance. Næsten alt hvad jeg siger og gør
+          bliver med det samme spejlet tilbage til mig, og efterhånden er jeg
+          blevet klar over, at hun er kommet herned med en stor indsigt og
+          vis-dom.<br>
+          Hun har også lært mig at lege og bruge min kreative side, og vi
+          griner meget sammen. Det er godt at få jeres barn til at grine, hvis
+          de ofte bliver sure, for latter løser op for mange følelser.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Hun er intelligent
+          og klarer sig fint i skolen, selv om de boglige fag ikke interesserer
+          hende ret meget. Hun synes, det er &quot;kedeligt&quot; men elsker
+          kristendom, hvor de tegner en del, musik og billedkunst.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Hun er meget
+          kreativ i sin fritid, hvor hun søger forskellige udfordringer.<br>
+          I skolen &quot;forsvinder&quot; hun lidt ind i sin egen verden, når
+          hun keder sig. Det opfatter læreren som manglende interesse. Men hvis
+          hun bliver spurgt om det, som foregår, så kender hun altid svaret.<br>
+          Hun har en stor viden om mange ting, så lærerne kan spørge hende om
+          næsten hvad som helst.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Jeg kan ikke lade
+          være med at tænke på, hvad der evt. var sket, hvis hun var en som
+          havde en voldsom adfærd i skolen. Hvilken &quot;kasse&quot; ville hun
+          så være blevet placeret i?<br>
+          Jeg tror desværre, at alt for mange børn bliver sendt til
+          skolepsykolog af lærere, som ikke forstår dem, ikke er i stand til
+          at møde dem og derfor mener at det må være barnet/familien, der er
+          noget galt med.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Der er nødt til
+          at ske noget inden for det nuværende skolesystem.<br>
+          Mange undersøgelser viser efterhånden, at hverken børn eller lærere
+          trives i folkeskolen. Glæden ved at gå i skole er dalet løbende og
+          betydeligt, siden forskerne på Institut for Folkesundhedsvidenskab på
+          Københavns Universitet første gang undersøgte skolebørnenes
+          trivsel i 1984. Undersøgelsen er blevet gentaget hver 4 år siden.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">&quot;Det som
+          betyder noget for skoletrivslen er hvor stor fortrolighed eleverne
+          oplever at have med lærerne. Om lærerne tager dem alvorligt, og om
+          eleverne får lov til at være med til at bestemme. De skoler, der har
+          en ledelse og en pædagogisk linje, der evner det, får også glade børn&quot;,
+          siger sociolog Bjørn Holstein, der er med til at foretage undersøgelsen.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Arbejdstilsynet
+          undersøgte sidste år det psykiske arbejdsmiljø på landets skoler.
+          &quot;Det psykiske arbejdsmiljø blandt lærerne er dårligt, bl.a.
+          også pga. dårlige fysiske rammer, som betyder, at folkeskolens krav
+          om differentieret undervisning og projektarbejde er en kilde til
+          frustration blandt de lærere, der arbejder på skoler, hvor det stort
+          set er umuligt at opfylde loven, fordi lokalerne ikke er til stede,
+          udtaler arbejdspsykolog Steen Christensen fra Arbejdstilsynet i Københavns
+          Amt.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Det er klart, at når
+          mange lærere trives dårligt i skolerne, så påvirker det også
+          vores børn negativt. Så både for børnenes skyld og for lærernes
+          er vi nødt til at gøre noget.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Jeg har netop læst
+          en tankevækkende artikel om en dreng som blev betegnet som DAMP-barn
+          af lærer, pædagog og psykolog på hans skole. Han blev indstillet
+          til PPR (psykologisk-pædagogisk rådgivning) for at få en støttepædagog.
+          Psykologen fra PPR sendte sagen videre til børnepsykiatrisk afdeling.
+          Og familien fik brev fra overlægen efter et par måneder, at han
+          havde sendt sagen videre til børneneurologisk afdeling med henblik på
+          Retalin-behandling (Retalin er psykofarmaka til behand-ling af bl.a.
+          DAMP). Det viste sig, at de havde taget fejl. Dette blev først
+          opdaget efter 1½ år - en meget belastende tid for både familien og
+          drengen - da drengen til slut endte hos en børnelæge på neurologisk
+          afdeling. Denne børnelæge betegnede ham som en helt &quot;normal
+          dreng&quot;. &quot;Han er bare en dreng med stort D&quot;, men det ser
+          ud, som om han skal skifte skole, sagde hun.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Gudskelov for at
+          familien mødte en kvinde som denne børnelæge, for hvor havde
+          drengen og familien ellers været i dag? Det er ikke rart at tænke på.
+          Desuden fortalte børnelægen, at hun desværre havde set den slags
+          sager ret tit! Jeg kan anbefale alle at læse denne artikel i Vi forældre,
+          august 2002. Jeg er taknemmelig over, at familien er stået frem med
+          denne beretning.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Og jeg vil gerne
+          advare forældre mod sige ja til Retalin-behandling. Måske kan det være
+          nødvendigt i enkelte tilfælde, men jeg tror de er få, og
+          konsekvenserne af at komme i denne behandling er, at så bliver børnene
+          ganske vist &quot;tilpasset&quot; - hvis det er det vi ønsker - men
+          samtidig fjerner de sig også fra deres oprindelige jeg/deres
+          spirituelle jeg - og det oplever jeg som et overgreb på børnene. I
+          USA er ret mange børn i Retalin-behandling og erfaringerne er ikke
+          positive. Flere børn og unge fortæller selv om det i bøger, der er
+          skrevet om Indigo-børn, og på internettet.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">I en af børnefamilierne
+          jeg har kontakt med, blev en pige på 3½ år også indstillet til PPR
+          for at få en støttepædagog og indstillet til børne-<br>
+          psykiatrisk afdeling til undersøgelse med henblik på
+          specialinstitution. Pigen virkede glad og harmonisk men meget inde i
+          sin egen verden. Hun legede ikke med andre børn i børnehaven.<br>
+          Heldigvis for. moderens store kærlighed til sit barn og selvindsigt,
+          som betød at moderen tog meget seriøst fat om sin egen selvudvikling
+          og henvendte sig til mig om dette efter at have læst min information
+          om spirituelle børnegrupper.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Efter et hjemmebesøg
+          hos familien og en periode som klient hos mig, en god børnehave og støttepædagog
+          har hele familien fået det betydeligt bedre. Pigen er begyndt at
+          blive stadig mere udadvendt, og intet tyder på, at hun behøver at
+          komme i en specialinstitution.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Der er forskellige
+          dejlige redskaber, som kan være en stor hjælp for jeres børn og
+          jer: Dem jeg nævner her er dem, som jeg selv kender til og har brugt
+          til mit barn og andre, og der kan sagtens være flere gode redskaber.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4"><br>
+          · Bach's Blomsterremedier (dråber som går ind på psykiske
+          tilstande)<br>
+          · Krystaller<br>
+          · Aura soma - balanceolier, quintessenser, pomanders<br>
+          · Afspænding/fantasirejser<br>
+          · Let massage<br>
+          · Healing<br>
+          · Englekort/devakort<br>
+          · Astrologi/stjernetegn - bøger for børn og om børn<br>
+          · Musik - englemusik, delfinmusik, afspændingsmusik, opløftende
+          musik, oMozart og andre klassiske komponister.<br>
+          · Maling/tegning og andre kreative udfoldelser<br>
+          · Specielle (spirituelle) børnegrupper - som jeg selv har startet op
+          i foråret o2002.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Børnegrupperne
+          indeholder de fleste af de ovennævnte ting. Vi leger/<br>
+          arbejder med at male, tegne, krystaller, fantasirejser, afspænding,
+          let massage, healing, englekort, lyde, dufte og aura soma.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Vi snakker om
+          engle, drømme, Gud/det guddommelige, stjernetegn, venskab og meget
+          andet som børnene viser interesse for og har lyst til at snakke om.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Jeg skaber et
+          frirum for kreativitet, fantasi, balance, spontanitet, livsglæde,
+          begejstring, forundring, fællesskab og tolerance.<br>
+          Min erfaring indtil nu har vist mig, at børn er meget glade for og
+          interes-serede i disse redskaber, der bliver stillet til rådighed.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">De føler sig mødt,
+          set og anerkendt for den unikke person, de hver især er. De føler en
+          stor tillid og tryghed. De kan mærke, at jeg som voksen kan rumme dem
+          og holder af dem.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Jeg har mødt børnene
+          både på det personlige og spirituelle plan. Dvs. at børnene nogle
+          gange også har kunnet bruge mig som budbringer/<br>
+          formidler til deres forældre. Børn er nogle gange tilbageholdende
+          med deres inderste ønsker - fx om samvær - for at &quot;skåne&quot;
+          deres forældre.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">En meget vigtig
+          ting i børnegrupperne er fællesskabet med andre børn. Børnene
+          oplever hurtigt en samhørighed med de andre børn - &quot;der er børn
+          som ligner mig, som jeg har noget til fælles med&quot;. Den oplevelse
+          er af stor værdi og med til, at de føler sig mindre ensomme.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Jeg har mødt/oplevet
+          flere børn, som føler ensomhed i deres børne-have/fritidsordning,
+          fordi der tilsyneladende er få som dem selv.<br>
+          Disse børn kan ikke bruge skolesystemet, som det er lige nu i de
+          fleste skoler. Derfor vil de reagere som systemnedbrydere via deres
+          adfærd. Børnene ved instinktivt, hvad de har brug for i fremtiden og
+          oplever bevidst/ubevidst at meget af det som de møder i folkeskolen,
+          er noget som ikke handler om deres fremtid.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Indigobørn<br>
+          Et indigobarn er et barn som udviser et nyt og usædvanligt sæt
+          psyko-logiske egenskaber og som viser et opførselsmønster, som ikke
+          tidligere er dokumenteret/påvist. Dette mønster har fælles, unikke
+          faktorer, som tyder på, at de, som indgår i en gensidig påvirkning/<br>
+          vekselvirkning med disse børn (især forældre) ændrer deres
+          behandling og opdragelse af dem for at opnå balance.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Navnet kommer fra
+          en dybblå farve i auraen som kaldes indigofarven. Der findes mange
+          forskellige tal for indigobørn - nogle mener at ca. 80% af børn født
+          efter 1980 er indigobørn.<br>
+          At ignorere disse nye mønstre vil kreere ubalance og frustration i
+          sindet hos dette dyrebare/værdifulde nye barn.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">De mest
+          almindelige opførselsmønstre:<br>
+          1. De kommer ind i en verden med en følelse af kongelighed (og de opfører
+          sig ofte derefter)</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">2. De har en følelse
+          af at fortjene/være værdige til at være her og bliver overrasket
+          over, at andre ikke deler denne opfattelse.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">3. Selvværd er
+          ikke noget stort nummer for dem - de fortæller ofte deres forældre
+          hvem de er.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">4. De har
+          problemer med absolut autoritet (autoritet uden forklaring eller
+          valg).</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">5. Der er
+          visse/bestemte ting, de simpelthen ikke vil gøre (fx er det svært
+          for dem at vente i en række).</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">6. De bliver
+          frustreret over systemer, som er rituelt orienteret og som ikke kræver
+          kreativ tænkning.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">7. De ser ofte
+          bedre måder at gøre ting på, både hjemme og i skolen, hvilket får
+          dem til at ligne systemnedbrydere (de føler sig ikke knyttet til
+          noget system).</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">8. De synes at være
+          &quot;asociale&quot; medmindre de er sammen med deres egen slags.<br>
+          Hvis der ikke er andre med en lignende bevidsthed som dem selv omkring
+          dem, trækker de sig ofte ind i sig selv med den følelse, at ingen
+          forstår dem.<br>
+          Skolen er ofte ekstremt svær for dem socialt.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">9. De vil ikke
+          reagere på &quot;skyld&quot;-disciplin (fx vent bare til din far
+          kommer hjem).</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">10. De holder sig
+          ikke tilbage med hensyn til at lade dig vide, hvad de behøver.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Indigobørn repræsenterer
+          en speciel art af individer, som er kommet til vores planet for at skænke
+          os deres gaver/evner samt øge lyset og kærligheden på vores planet.<br>
+          De er her for at ændre vores politiske, uddannelsesmæssige, ernæ-ringsmæssige,
+          familiemæssige system og andre systemer. De er her også for at hjælpe
+          os alle med at nå vores potentiale ved at blive mere naturlige og
+          intuitive. Indigobørn er selvbevidste, egenrådige, stædige og
+          kreative. De har en opgave at udføre, og de vil ikke lade nogen stå
+          i vejen for dem.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Tidligere
+          generationer modtog også det intuitive budskab at ændre de politiske
+          systemer, at heale verdenen. De begyndte på dette men tillod sig selv
+          at komme på afveje.<br>
+          Indigobørnene vil ikke lade det samme ske - medmindre vi &quot;bedøver&quot;
+          dem til underkastelse.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Der vil selvfølgelig
+          være nogle mennesker, som ikke kan lide den forandring, som disse børn
+          repræsenterer. De ville foretrække de nuværende systemer og ønsker,
+          at indigobørnene føjer sig/retter sig efter dette. Og det er nogle
+          af disse mennesker, som vores børn møder på deres vej.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Jeg er lidt
+          ambivalent over for betegnelsen indigobørn, fordi jeg på den ene
+          side ikke synes, at vi skal anbringe vores børn i nogle nye
+          &quot;kasser&quot;, for det kan begrænse dem og os og skabe
+          adskillelse. Og på den anden side kan jeg godt se, at vi kan få en
+          hjælp og viden, som kommer vores børn - og os - til gode.<br>
+          I USA er de betydeligt længere end os på dette område, og jeg har søgt
+          min viden på internettet og via bøger om indigobørn. Der findes
+          mange betegnelser for den ny tids børn, men jeg foretrækker at kalde
+          dem spirituelle børn, fordi de kommer med en spirituel viden og
+          visdom.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Først da jeg
+          skulle hjælpe en familie med deres yngste barn, hvor min indre stemme
+          fortalte mig, at dette barn var et indigobarn, søgte jeg en seriøs
+          viden om dette emne, som betød, at det gik op for mig, at min egen
+          datter indeholdt langt de fleste karaktertræk på et indigobarn.<br>
+          Og dette har bestemt været en stor hjælp for mig, fordi der fandtes
+          mennesker (i USA) som havde en stor erfaring med disse børn. Den
+          erfaring som jeg først nu via mit eget barn og andres børn er ved at
+          få.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Jeg har mødt
+          disse børn i mine børnegrupper (flere af børnene har spirituelle
+          evner, fx at tale med ånder/afdøde eller at heale) og i
+          daginstitutioner - børnehave og vuggestue - hvor jeg har arbejdet i 6
+          år. Desuden møder jeg dem også i skolesystemet via min datter. Og
+          jeg er efterhånden kommet i kontakt med en del forældre som også
+          oplever deres børn som disse spirituelle børn.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">En 6-årig dreng
+          udtaler, at blomster og planter har en sjæl lige som os - en 4-årig
+          pige taler med de afdøde og ved, at hun har levet et tidligere liv,
+          hvor hun har haft børn. Hun kan huske sin egen fødsel og har ofte
+          kontakt med lysvæsener. Nogle af disse evner bliver børnene bange
+          for, fx at de bliver kontaktet af ånder, og det er vigtigt, at vi er
+          der for dem, beskytter dem og hjælper dem med at håndtere disse
+          evner.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Og det er meget
+          vigtigt, at der findes voksne, som har denne viden om børn - både
+          forældre, pædagoger og lærere.</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4"><br>
+          Kære læser<br>
+          Tak for din tid og interesse. Det har glædet mit hjerte at skrive
+          denne information om vores vidunderlige børn. De er en af vores største
+          &quot;skatte&quot; som vi skal tage kærligt vare på.</font></b></p>
+			<p align="center"><b><font size="3" color="#D4D4D4">_______________________________________</font></b></p>
+          <p align="center"><b><font size="3" color="#D4D4D4">Henv.: Hjertets Vej v/Anette Bitten Christensen,&nbsp;</font></b></p>
+			<p align="center">&nbsp;</p>
+			<p align="center" style="color: #FFFFFF">
+			<a href="index.htm" style="color: #FFFFFF">Til Startside</a></p>
+          </td>
+      </tr>
+    </table>
+  </div>
+</div>
+</HTML>
